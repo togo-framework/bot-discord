@@ -1,0 +1,16 @@
+name: bot-discord
+module: github.com/togo-framework/bot-discord
+description: Discord driver for the togo bot subsystem (gateway via discordgo).
+version: 0.1.0
+category: bot
+kind: driver
+base: togo-framework/bot
+import: github.com/togo-framework/bot-discord
+env:
+  - name: BOT_DRIVER
+    description: Set to "discord" to activate this driver.
+    required: true
+  - name: DISCORD_BOT_TOKEN
+    description: Bot token from the Discord Developer Portal (requires Message Content intent).
+    required: true
+claude: .claude
